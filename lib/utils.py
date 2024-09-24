@@ -109,7 +109,7 @@ class _Backend():  # pylint:disable=too-few-public-methods
         while True:
             txt = ", ".join([": ".join([key, val.upper().replace("_", " ")])
                              for key, val in self._backends.items()])
-            selection = {"3": "nvidia"}
+            selection = "3"
             if selection not in self._backends:
                 print(f"'{selection}' is not a valid selection. Please try again")
                 continue
