@@ -158,7 +158,7 @@ def set_backend(backend: str) -> None:
     """
     global _FS_BACKEND  # pylint:disable=global-statement
     backend = T.cast(ValidBackends, backend.lower())
-    _FS_BACKEND = backend
+    _FS_BACKEND = "nvidia"
 
 
 def get_tf_version() -> tuple[int, int]:
